@@ -1,5 +1,16 @@
-import "@/styles/globals.css";
+import '../styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <div className="container">
+      <header>
+        <h1>My ChatBot</h1>
+      </header>
+      <main>
+        <Component {...pageProps} />
+      </main>
+    </div>
+  );
 }
+
+export default MyApp;
